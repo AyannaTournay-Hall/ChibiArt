@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset = "UTF-8">
+    <!-- Author: Ayanna Tournay-Hall
+        
+    -->
+   
+    <head>
+        <center>
+            <h1>
+            Custom Request Form
+            </h1>
+        </center>
+    </head>
+    <link rel="stylesheet" type="text/css" href="chibiArt.css">
+    <title>Custom Form</title>  
+
+    <body> 
+        <form>
+            <!-----Create textboxes for first and last name input-->
+            <p>
+            <label for "clientName">Enter your first and last name: </label>
+            <input type="text" id = "clientName">
+            </p>
+            <p>
+            <label for "clientEmail">Enter your email address: </label>
+            <input type="text" id = "clientEmail">
+            </p>
+
+            <!-----radio buttons-->
+            <fieldset id = "artType">
+                <legend>What type of art are you requesting</legend>
+                <input type="radio" name="artType" value = "Line" id = "Line">
+                <label for "Line">Line Art</label>
+                <input type="radio" name="artType" value = "BlackWhite" id = "BlackWhite">
+                <label for "BlackWhite">Black and White</label>
+                <input type="radio" name="artType" value = "Color" id = "Color">
+                <label for "Color">Color</label>
+                <input type="radio" name="artType" value = "Painting" id = "Painting">
+                <label for "Painting">Painting</label>
+            </fieldset>
+            <br>
+            
+            <!-----checkboxes-->
+
+            <fieldset>
+                <legend>Digital Print or Physical Copy</legend>
+                <input type="checkbox" name="Digital" id = "Digital">
+                <label for "Digital">Digital</label>
+                <input type="checkbox" name="Physical" id = "Physical">
+                <label for "Physical">Physical</label>   
+            </fieldset>
+            <br>
+
+            <!-----this is a textarea widget---->
+            <label for="request">Enter the description of your request.<br>
+                Please be as detailed as possible:</label><br>
+            <textarea id="request" placeholder="Enter description here"></textarea>
+
+            <!----this is the number range widget------>
+            <br>
+            <label for="tip">How much would you like to tip?(optional)</label>
+            <input type="range" id="tip" min="0" max="120" value="21">
+
+            <!-----this is the submit button------>
+            <br>
+            <input type="submit">
+
+
+        </form>
+    </body>
+</html>
